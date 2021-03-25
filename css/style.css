@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.carusel_section{
+    display: flex;
+    height: 100vh;
+}
+
+.carusel_wrapper{
+    display: flex;
+    align-items: center;
+    width: 800px;
+    height: 600px;
+    background-color: royalblue;
+    margin: auto;
+}
+
+.arrow i{
+    font-size: 30px;
+}
+
+.carusel_img{
+    width: 100%;
+    padding: 0 10px;
+}
+
+.carusel_img img{
+    width: 100%;
+}
