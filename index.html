@@ -21,6 +21,11 @@
 
                     <div class="carusel_img">
                         <img v-bind:src="images[imagesIndex]" alt="">
+
+                        <div class="circle_container">
+                            <i v-for="items in images" class="fas fa-circle active"></i>
+                        </div>
+                        
                     </div>
                     
                     <div class="arrow next_photo">

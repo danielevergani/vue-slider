@@ -19,13 +19,37 @@
 
 .arrow i{
     font-size: 30px;
+    cursor: pointer;
 }
 
 .carusel_img{
+    position: relative;
     width: 100%;
     padding: 0 10px;
 }
 
 .carusel_img img{
     width: 100%;
+}
+
+.carusel_img{
+    color: white;
+}
+
+.carusel_img i{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.circle_container{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+}
+
+.active{
+    color: blue;
 }
