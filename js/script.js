@@ -7,6 +7,13 @@ var app = new Vue ({
             'https://images.lonelyplanetitalia.it/uploads/shutterstock-185800496?q=80&p=slider&s=4d256dfd284af350d8605473326767f9'
         ],
         imagesIndex: 0,
+
+        background: [
+            'back1',
+            'back2',
+            'back3'
+        ]
+
         
     },
     methods: {

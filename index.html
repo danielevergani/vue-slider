@@ -12,7 +12,7 @@
     </head>
     <body>
 
-        <div id="root">
+        <div  v-bind:class="background[imagesIndex]" id="root">
             <div class="carusel_section">
                 <div class="carusel_wrapper">
                     <div class="arrow prev_photo">
@@ -20,10 +20,10 @@
                     </div>
 
                     <div class="carusel_img">
-                        <img v-bind:src="images[imagesIndex]" alt="">
+                        <img v-bind:src="images[imagesIndex]" alt="" data-blur="20">
 
                         <div class="circle_container">
-                            <i @click="circleSelection(index)" class="fas fa-circle " v-for="(items, index) in images" :class="index == imagesIndex ? 'active': '' "> {{index}} </i>
+                            <i @click="circleSelection(index)" class="fas fa-circle " v-for="(items, index) in images" :class="index == imagesIndex ? 'active': '' "></i>
                         </div>
                         
                     </div>
@@ -35,7 +35,6 @@
                 </div>
             </div>
         </div>
-
         <script src="js/script.js"></script>
     </body>
 </html>
