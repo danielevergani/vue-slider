@@ -6,6 +6,20 @@ var app = new Vue ({
             'https://www.gorgolive.it/wp-content/uploads/2019/12/canada-2020.jpg',
             'https://images.lonelyplanetitalia.it/uploads/shutterstock-185800496?q=80&p=slider&s=4d256dfd284af350d8605473326767f9'
         ],
-        imagesIndex: 1
+        imagesIndex: 0
+    },
+    methods: {
+        nextImg: function(){
+            this.imagesIndex++;
+            if( this.imagesIndex == this.images.length ){
+                this.imagesIndex = 0;
+            }
+        },
+        prevImg: function(){
+            this.imagesIndex--;
+            if( this.imagesIndex < 0 ){
+                this.imagesIndex = this.images.length -1 ;
+            }
+        }
     }
 })
