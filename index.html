@@ -12,7 +12,7 @@
     </head>
     <body>
 
-        <div id="root"></div>
+        <div id="root">
             <div class="carusel_section">
                 <div class="carusel_wrapper">
                     <div class="arrow prev_photo">
@@ -20,7 +20,7 @@
                     </div>
 
                     <div class="carusel_img">
-                        <img src="" alt="">
+                        <img v-bind:src="images[imagesIndex]" alt="">
                     </div>
                     
                     <div class="arrow next_photo">
@@ -29,6 +29,7 @@
             
                 </div>
             </div>
+        </div>
 
         <script src="js/script.js"></script>
     </body>
