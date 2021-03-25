@@ -23,7 +23,7 @@
                         <img v-bind:src="images[imagesIndex]" alt="">
 
                         <div class="circle_container">
-                            <i v-for="items in images" class="fas fa-circle active"></i>
+                            <i @click="circleSelection(index)" class="fas fa-circle " v-for="(items, index) in images" :class="index == imagesIndex ? 'active': '' "> {{index}} </i>
                         </div>
                         
                     </div>
