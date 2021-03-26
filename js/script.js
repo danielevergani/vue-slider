@@ -18,7 +18,7 @@ var app = new Vue ({
     },
 
     mounted: function(){
-       this.autoplay = setInterval(this.nextImg, 3000);
+       this.autoplay = setInterval(this.nextImg, 1000);
     },
 
     methods: {
@@ -36,7 +36,14 @@ var app = new Vue ({
         },
         circleSelection: function(i){
             this.imagesIndex = i;
+        },
+        prevClearImg: function(){
+            this.prevImg();
+            clearInterval(this.autoplay);
+        },
+        nextClearImg: function(){
+            this.nextImg();
+            clearInterval(this.autoplay);
         }
-        
     }
 })
