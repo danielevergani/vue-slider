@@ -12,10 +12,15 @@ var app = new Vue ({
             'back1',
             'back2',
             'back3'
-        ]
+        ],
 
-        
+        autoplay: null
     },
+
+    mounted: function(){
+       this.autoplay = setInterval(this.nextImg, 3000);
+    },
+
     methods: {
         nextImg: function(){
             this.imagesIndex++;
@@ -32,5 +37,6 @@ var app = new Vue ({
         circleSelection: function(i){
             this.imagesIndex = i;
         }
+        
     }
 })
